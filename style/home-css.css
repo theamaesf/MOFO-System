@@ -1,0 +1,133 @@
+a
+{
+    text-decoration: none;
+    margin: -10;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#left, #right
+{
+    float: left;
+    width: 50%;
+    margin: 0 auto;
+    z-index: 1000;
+}
+
+#left img, #right img
+{
+    top: 0px;
+    position:absolute;
+
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+#left img.top:hover, #right img.top:hover
+{
+    opacity: 0;
+}
+
+.transition
+{
+    z-index: -1000;
+}
+
+.logo
+{
+    top: 40px;
+    left: 80px;
+    position: relative;
+    z-index: 10000;
+}
+
+.sign
+{
+    top: 20px;
+    left: 1000px;
+    position: relative;
+    z-index: 10000;
+}
+
+.search
+{
+    font-size: 15px;
+    padding-left: 10px;
+    font-family: 'regular';
+
+    width: 280px;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 10px;
+
+    top: 50px;
+    left: 540px;
+    position: relative;
+    z-index: 11000;
+}
+
+.s
+{
+    top: 65px;
+    left: 510px;
+    position: relative;
+    z-index: 12000;
+}
+
+/* FOR MOVIES */
+.mInfo
+{
+    top: 230px;
+    left: 170px;
+    position: relative;
+    z-index: 10000;
+}
+
+.mInfo .click
+{
+    top: 150px;
+    left: 90px;
+    position: relative;
+
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: 'regular';
+    z-index: 190;
+}
+
+.fInfo
+{
+    font-family: 'bold';
+    color: white;
+    font-size: 100px;
+
+    top: 98px;
+    left: 930px;
+    position: relative;
+    z-index: 10000;
+}
+
+#right .top
+{
+    top: -165px;
+    right: 0px;
+    position: relative;
+}
+
+.fInfo .click2
+{
+    top: 150px;
+    left: 90px;
+    position: relative;
+
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: 'regular';
+    z-index: 190;
+}

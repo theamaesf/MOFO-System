@@ -1,0 +1,243 @@
+<html>
+  <head>
+    <title>Register Account</title>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1">
+
+    <link rel = "shortcut icon" type = "image/x-icon" href = "./img/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="./style/common.css" />
+	<script src="./js/modernizr.custom2.js"></script>
+
+    <style>
+      @font-face
+      {
+          font-family: "regular";
+          src: url("./fonts/Roboto-Regular.woff");
+      }
+
+      @font-face
+      {
+          font-family: "bold";
+          src: url("./fonts/Roboto-Bold.woff");
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <img class = "colorblock" src = "./img/block.png"></img>
+      <div class="wrapper">
+          <nav>
+            <a class = "left" href="home.html"><img src = "./img/logonew.png"></a>
+            <a class = "mid" href="movie1.html">MOVIE</a>
+            <a class = "mid" href="food.html">FOOD</a>
+            <a class = "right" href="register.html"><img src = "./img/user1.png"></a>
+          </nav>
+      </div>
+    </header>
+
+	 <br> <br> <br> <br> <br> <br> <br>
+	<div class = "container">
+
+		<div class="vl"></div>
+
+		<div class = "label">
+			<p><span style = "letter-spacing: 1px; font-size: 35px; color: #555454">CREATE ACCOUNT</span></p>
+		</div>
+
+		<div class = "list1">
+			<p>
+				<span style = "font-size: 20px; color: black">NAME</span> <br>
+				<input type = "text" class = "fName" name = "fName" placeholder = "First" style = "border-radius: 5px; font-size: 9pt; width: 150px; height: 25px; border: 2px solid black">
+				<input type = "text" class = "lName" name = "lName" placeholder = "Last" style = "border-radius: 5px; font-size: 9pt; width: 150px; height: 25px; border: 2px solid black"> <br>
+			</p>
+
+			<p>
+				<span style = "font-size: 20px; color: black">PASSWORD</span> <br>
+				<input type = "password" class = "pw" name = "pw" style = "border-radius: 5px; font-size: 9pt; width: 305px; height: 25px; border: 2px solid black">
+			</p>
+
+			<p>
+			  <span style = "font-size: 20px; color: black">CONFIRM PASSWORD</span> <br>
+			  <input type = "password" class = "pw" name = "pw" style = "border-radius: 5px; font-size: 9pt; width: 305px; height: 25px; border: 2px solid black">
+			</p>
+
+			<br>
+			<p>Why create an account? By making an account, </p>
+			<p>you will be able rate create movies & restaurants, </p>
+			<p>write reviews, and upload pictures.</p>
+
+		</div>
+
+		<div class = "list2">
+
+			<p>
+				<div class = "email">
+				<span style = "font-size: 20px; color: black">E-MAIL ADDRESS</span> <br>
+				<input type = "text" class = "email" name = "email" style = "border-radius: 5px; font-size: 9pt; width: 305px; height: 25px; border: 2px solid black">
+			</p>
+
+			<p>
+				<span class = "bdayL" style = "font-size: 20px; color: black">BIRTHDATE</span> <br>
+
+				<form action = "" method = "post">
+				<select class = "month" name = "month" style = "border-radius: 5px; font-size: 9pt; width: 100px; height: 25px; border: 2px solid black">
+					<option disabled selected value> Month </option>
+					<option value = "1">January</option>
+					<option value = "2">February</option>
+					<option value = "3">March</option>
+					<option value = "4">April</option>
+					<option value = "5">May</option>
+					<option value = "6">June</option>
+					<option value = "7">July</option>
+					<option value = "8">August</option>
+					<option value = "9">September</option>
+					<option value = "10">October</option>
+					<option value = "11">December</option>
+				</select>
+				</form>
+
+				<input type = "text" class = "day" placeholder = "Day" class = "day" name = "day" style = "border-radius: 5px; font-size: 9pt; width: 50px; height: 25px; border: 2px solid black">
+
+				<input type = "text" class = "year" placeholder = "Year" class = "year" name = "year" style = "border-radius: 5px; font-size: 9pt; width: 60px; height: 25px; border: 2px solid black">
+			</p>
+
+			<p>
+				<span class = "numLabel" style = "font-size: 20px; color: black">MOBILE NUMBER</span> <br>
+				<input type = "text" class = "num" name = "num" placeholder = "+63 XXX-XXXX-XXXX" value = "+63"style = "border-radius: 5px; font-size: 9pt; width: 305px; height: 25px; border: 2px solid black">
+			</p>
+
+		</div>
+
+		<input type="submit" class="sClick" value = "SEARCH">
+
+	</div>
+
+    <style>
+    .wrapper
+    {
+        top: -155px;
+        position: relative;
+    }
+
+		/* CONTAINER */
+		.container{
+			top: 70px;
+			left: 250px;
+			position: relative;
+			font-family: "regular";
+			src: url("./fonts/Roboto-Regular.woff");
+		}
+
+		.label{
+			top: 0px;
+			left: -100px;
+			position: relative;
+		}
+
+		.month{
+			top: -16px;
+			left: 0px;
+			position: relative;
+		}
+
+		.day{
+			top: -57px;
+			left: 110px;
+			position: relative;
+		}
+
+		.year{
+			top: -57px;
+			left: 117px;
+			position: relative;
+		}
+
+		.numLabel{
+			top: -57px;
+			left: 0px;
+			position: relative;
+		}
+
+		.num{
+			top: -57px;
+			left: 0px;
+			position: relative;
+		}
+
+		.list2{
+			top: -335px;
+			left: 550px;
+			position: relative;
+		}
+
+		.vl {
+			border-left: 3px solid #CCCCCC;
+			height: 400px;
+			position: absolute;
+			top: 10%;
+			left: 32%;
+			margin-left: -3px;
+		}
+
+    .sClick
+    {
+        font-size: 15px;
+        padding-top: 2px;
+        padding-left: 8px;
+
+        width: 105px;
+        height: 30px;
+        border: none;
+        border-radius: 15px;
+
+        color: white;
+        background-color: #e64949;
+    }
+
+    .sClick:hover
+    {
+        background-color: #ba3737;
+    }
+
+		/* END OF CONTAINER */
+
+    </style>
+
+	<script src="js/classie.js"></script>
+	<script>
+		/* BUTTON */
+		var buttons7Click = Array.prototype.slice.call( document.querySelectorAll( '#btn-click button' ) ),
+		buttons9Click = Array.prototype.slice.call( document.querySelectorAll( 'button.btn-8g' ) ),
+		totalButtons7Click = buttons7Click.length,
+		totalButtons9Click = buttons9Click.length;
+
+		buttons7Click.forEach( function( el, i ) { el.addEventListener( 'click', activate, false ); } );
+		buttons9Click.forEach( function( el, i ) { el.addEventListener( 'click', activate, false ); } );
+
+		function activate() {
+		var self = this, activatedClass = 'btn-activated';
+
+		if( classie.has( this, 'btn-7h' ) ) {
+		  // if it is the first of the two btn-7h then activatedClass = 'btn-error';
+		  // if it is the second then activatedClass = 'btn-success'
+		  activatedClass = buttons7Click.indexOf( this ) === totalButtons7Click-2 ? 'btn-error' : 'btn-success';
+		}
+		else if( classie.has( this, 'btn-8g' ) ) {
+		  // if it is the first of the two btn-8g then activatedClass = 'btn-success3d';
+		  // if it is the second then activatedClass = 'btn-error3d'
+		  activatedClass = buttons9Click.indexOf( this ) === totalButtons9Click-2 ? 'btn-success3d' : 'btn-error3d';
+		}
+
+		if( !classie.has( this, activatedClass ) ) {
+		  classie.add( this, activatedClass );
+		  setTimeout( function() { classie.remove( self, activatedClass ) }, 1000 );
+		}
+		}
+
+		document.querySelector( '.btn-7i' ).addEventListener( 'click', function() {
+		classie.add( document.querySelector( '#trash-effect' ), 'trash-effect-active' );
+		}, false );
+	</script>
+
+  </body>
+</html>

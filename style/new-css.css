@@ -1,0 +1,280 @@
+/* HEADER PIC */
+.colorblock
+{
+    top: 0px;
+    position: fixed;
+    z-index: -100000;
+}
+
+/* CREATING THE BLOCK POSITIONING */
+
+.container
+{
+    padding-top: 200px;
+    margin-left: 0px;
+}
+
+.container p
+{
+    font-size: 100px;
+    font-family: 'bold';
+    color: #bdcffb;
+
+    top: -250px;
+    left: 50px;
+    position: relative;
+}
+
+.container ul
+{
+    margin-left: 60px;
+
+    list-style: none;
+    position: relative;
+}
+
+.container ul li
+{
+    display: inline-block;
+    float: left;
+
+    margin-bottom: inherit;
+    margin-right: 32px;
+/*    margin-right: 30px;
+    margin-top: -125px; */
+
+    width: 29%;
+    height: 21%;
+    max-width: 29%;
+
+    z-index: 999;
+    background: white;
+
+    box-shadow: 0 10px 10px #d0cfcf;
+    font-family: 'regular';
+}
+
+/* IMAGE PLACING */
+.container ul li .imge
+{
+    margin-left: 10px;
+    margin-top: -75px;
+
+    position: absolute;
+}
+
+/* ZOOM IN HOVER EFFECT ON IMAGE */
+div.imge
+{
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
+.container .imge a
+{
+    -webkit-transition: -webkit-transform 0.4s ease;
+    -moz-transition: -moz-transform 0.4s ease;
+    -o-transition: -o-transform 0.4s ease;
+    transition: transform 0.4s ease;
+}
+
+.container .imge a:hover
+{
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+/* END HOVER EFFECT */
+
+/* PLACING OF THINGS IN 'CARD' */
+
+.container ul li .info
+{
+    padding-top: 20px;
+    padding-left: 217px;
+    position: static;
+
+    color: #e64949;
+    font-size: 25px;
+    letter-spacing: -1px;
+}
+
+.container ul li h5
+{
+    margin-top: 5px;
+    position: static;
+
+    font-size: 15px;
+    color: black;
+}
+
+.container ul li .rating
+{
+    margin-top: -20px;
+    position: static;
+}
+
+.container ul li .address
+{
+    color: black;
+    font-size: 15px;
+    margin-top: -20px;
+    position: static;
+}
+
+.container ul li .info .tags
+{
+  /*  top: -33px; */
+    position: absolute;
+
+    font-size: 13px;
+    color: #b1aeaf;
+}
+
+/* SEARCH BAR */
+.foodBtn
+{
+    margin: 30px 80px;
+}
+
+.search
+{
+    font-size: 15px;
+    padding-left: 10px;
+
+    width: 350px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+
+    top: -50px;
+    left: 610px;
+    position: relative;
+}
+
+.sClick
+{
+    font-size: 15px;
+    padding-left: 8px;
+
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+
+    color: white;
+    background-color: #e64949;
+
+    top: -51px;
+    left: 625px;
+    position: relative;
+}
+
+.sClick:hover
+{
+    background-color: #ba3737;
+}
+
+@media only screen and (max-device-width: 480px)
+{
+    .search
+    {
+        font-size: 10px;
+        padding-left: 5px;
+
+        width: 100px;
+        height: 20px;
+        border: 2px solid black;
+        border-radius: 10px;
+
+        top: -75px;
+        left: 180px;
+        position: relative;
+    }
+
+    .container
+    {
+        padding-top: 70px;
+        margin-left: -220px;
+    }
+
+    .container ul
+    {
+        margin-left: 60px;
+
+        list-style: none;
+        position: relative;
+    }
+
+    .container ul li
+    {
+        display: inline-block;
+        float: left;
+
+        margin-bottom: inherit;
+        margin-right: 32px;
+    /*    margin-right: 30px;
+        margin-top: -125px; */
+
+        width: 160%;
+        height: 21%;
+        max-width: 160%;
+
+        z-index: 999;
+        background: white;
+
+        box-shadow: 0 10px 10px #d0cfcf;
+        font-family: 'regular';
+    }
+
+    /* IMAGE PLACING */
+    .container ul li .imge
+    {
+        margin-left: 10px;
+        margin-top: -70px;
+
+        position: absolute;
+    }
+
+    /* ZOOM IN HOVER EFFECT ON IMAGE */
+    div.imge
+    {
+        overflow: hidden;
+        width: 170px;
+        height: 114px;
+    }
+
+    .container .imge a
+    {
+        -webkit-transition: -webkit-transform 0.4s ease;
+        -moz-transition: -moz-transform 0.4s ease;
+        -o-transition: -o-transform 0.4s ease;
+        transition: transform 0.4s ease;
+    }
+
+    .container .imge a:hover
+    {
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -o-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+    /* END HOVER EFFECT */
+
+    /* PLACING OF THINGS IN 'CARD' */
+
+    .container ul li .info
+    {
+        padding-top: 10px;
+        padding-left: 187px;
+        position: static;
+
+        color: #e64949;
+        font-size: 20px;
+        letter-spacing: -1px;
+    }
+}

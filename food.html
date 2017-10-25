@@ -1,0 +1,325 @@
+<html>
+  <head>
+    <title>Food Homepage</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=devide-width, , height=device-height, user-scalable=no, initial-scale=1." />
+
+    <link rel = "shortcut icon" type = "image/x-icon" href = "./img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="./style/set.css" />
+    <link rel="stylesheet" type="text/css" href="./style/common.css" />
+    <link rel="stylesheet" type="text/css" href="./style/component.css" />
+    <link rel="stylesheet" type="text/css" href="./style/foodhome-css.css" />
+
+    <style>
+      @font-face
+      {
+          font-family: "regular";
+          src: url("./fonts/Roboto-Regular.woff");
+      }
+
+      @font-face
+      {
+          font-family: "bold";
+          src: url("./fonts/Roboto-Bold.woff");
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <img class = "colorblock" src = "./img/block.png"></img>
+      <div class="wrapper">
+          <nav>
+            <a class = "left" href="home.html"><img src = "./img/logonew.png"></a>
+            <a class = "mid" href="movie1.html">MOVIE</a>
+            <a class = "mid" href="food.html">FOOD</a>
+            <a class = "right" href="register.html"><img src = "./img/user1.png"></a>
+          </nav>
+      </div>
+    </header>
+
+    <section id = "main">
+
+      <div class = "next">
+        <a class = "n1" href="food.html">ALL</a>
+        <a class = "n2" href="trending.html">TRENDING</a>
+        <a class = "n3" href="new.html">NEWLY OPENED</a>
+
+        <form method="post" action="">
+		      <input type="text" class="search" placeholder = "Search">
+          <input type="submit" class="sClick" value = "SEARCH">
+        <!--  <div class = "foodBtn"><button class="btn btn-2 btn-2g">SEARCH</button></div> -->
+		    </form>
+      </div>
+
+      <div class = "foodList">
+
+        <ul>
+        <!--  <p class = "title" style = "font-family: bold; font-size: 100px; color: #6ebbc9; opacity: 0.5;">DISCOVER</p>
+        -->
+          <!-- AMERICAN -->
+          <li>
+            <div class="grid">
+    					<figure class="effect-lily">
+    						<img src="./img/american.jpg"/>
+    						<figcaption>
+    							<div>
+    								<h2>American</h2>
+    								<a href = "american.html"><p>View More ></p></a>
+    							</div>
+    						</figcaption>
+    					</figure>
+            </div>
+          </li>
+
+          <!-- BUFFET -->
+          <li>
+            <div class="grid">
+    					<figure class="effect-lily">
+    						<img src="./img/buffet.jpg"/>
+    						<figcaption>
+    							<div>
+    								<h2>Buffet</h2>
+    								<a href = "buffet.html"><p>View More ></p></a>
+    							</div>
+    						</figcaption>
+    					</figure>
+            </div>
+          </li>
+
+          <!-- BREAKFAST -->
+          <li>
+            <div class="grid">
+    					<figure class="effect-lily">
+    						<img src="./img/bfast.jpg"/>
+    						<figcaption>
+    							<div>
+    								<h2>Breakfast</h2>
+    								<a href = "bfast.html"><p>View More ></p></a>
+    							</div>
+    						</figcaption>
+    					</figure>
+            </div>
+          </li>
+
+          <!-- CAFE -->
+          <li>
+            <div class="grid">
+    					<figure class="effect-lily">
+    						<img src="./img/cafe.jpg"/>
+    						<figcaption>
+    							<div>
+    								<h2>Cafe</h2>
+    								<a href = "cafe.html"><p>View More ></p></a>
+    							</div>
+    						</figcaption>
+    					</figure>
+            </div>
+          </li>
+
+          <!-- CAKES & PASTRIES -->
+          <li>
+            <div class="grid">
+    					<figure class="effect-lily">
+    						<img src="./img/cakes.jpg"/>
+    						<figcaption>
+    							<div>
+    								<h2>Cakes <br> & Pastries</h2>
+    								<a href = "cakes.html"><p>View More ></p></a>
+    							</div>
+    						</figcaption>
+    					</figure>
+            </div>
+          </li>
+
+          <!-- CHINESE -->
+          <li>
+            <div class="grid">
+    					<figure class="effect-lily">
+    						<img src="./img/chinese.png"/>
+    						<figcaption>
+    							<div>
+    								<h2>Chinese</h2>
+    								<a href = "chinese.html"><p>View More ></p></a>
+    							</div>
+    						</figcaption>
+    					</figure>
+            </div>
+          </li>
+
+          <!-- DESSERTS -->
+          <li>
+            <div class="grid">
+    					<figure class="effect-lily">
+    						<img src="./img/icecream.jpg"/>
+    						<figcaption>
+    							<div>
+    								<h2>Deserts</h2>
+    								<a href = "dessertssx.html"><p>View More ></p></a>
+    							</div>
+    						</figcaption>
+    					</figure>
+            </div>
+          </li>
+
+          <!-- FAST FOOD -->
+          <li>
+            <div class="grid">
+    					<figure class="effect-lily">
+    						<img src="./img/fastfood.jpg"/>
+    						<figcaption>
+    							<div>
+    								<h2>Fast Food</h2>
+    								<a href = "fastfood.html"><p>View More ></p></a>
+    							</div>
+    						</figcaption>
+    					</figure>
+            </div>
+          </li>
+
+          <!-- FILIPINO -->
+          <li>
+            <div class="grid">
+    					<figure class="effect-lily">
+    						<img src="./img/filipino.jpg"/>
+    						<figcaption>
+    							<div>
+    								<h2>Filipino</h2>
+    								<a href = "filipino.html"><p>View More ></p></a>
+    							</div>
+    						</figcaption>
+    					</figure>
+            </div>
+          </li>
+
+          <!-- INDIAN -->
+          <li>
+            <div class="grid">
+              <figure class="effect-lily">
+                <img src="./img/indian.jpg"/>
+                <figcaption>
+                  <div>
+                    <h2>Indian</h2>
+                    <a href = "indian.html"><p>View More ></p></a>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </li>
+
+          <!-- ITALIAN -->
+          <li>
+            <div class="grid">
+    					<figure class="effect-lily">
+    						<img src="./img/italian.jpg"/>
+    						<figcaption>
+    							<div>
+    								<h2>Italian</h2>
+    								<a href = "italian.html"><p>View More ></p></a>
+    							</div>
+    						</figcaption>
+    					</figure>
+            </div>
+          </li>
+
+          <!-- JAPANESE -->
+          <li>
+              <div class="grid">
+                <figure class="effect-lily">
+                  <img src="./img/jap.jpg"/>
+                  <figcaption>
+                    <div>
+                      <h2>Japanese</h2>
+                      <a href = "italian.html"><p>View More ></p></a>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+          </li>
+
+          <!-- KOREAN -->
+
+          <li>
+              <div class="grid">
+      					<figure class="effect-lily">
+      						<img src="./img/korean.jpg"/>
+      						<figcaption>
+      							<div>
+      								<h2>Korean</h2>
+      								<a href = "italian.html"><p>View More ></p></a>
+      							</div>
+      						</figcaption>
+      					</figure>
+              </div>
+          </li>
+
+          <!-- MEXICAN -->
+
+          <li>
+              <div class="grid">
+      					<figure class="effect-lily">
+      						<img src="./img/mexican.jpg"/>
+      						<figcaption>
+      							<div>
+      								<h2>Mexican</h2>
+      								<a href = "mexican.html"><p>View More ></p></a>
+      							</div>
+      						</figcaption>
+      					</figure>
+              </div>
+          </li>
+
+          <!-- VEGETARIAN -->
+
+          <li>
+              <div class="grid">
+      					<figure class="effect-lily">
+      						<img src="./img/veg.jpg"/>
+      						<figcaption>
+      							<div>
+      								<h2>Vegetarian</h2>
+      								<a href = "vegetarian.html"><p>View More ></p></a>
+      							</div>
+      						</figcaption>
+      					</figure>
+              </div>
+          </li>
+
+          <!-- DELIVER -->
+
+          <li>
+              <div class="grid">
+      					<figure class="effect-lily">
+      						<img src="./img/deliver.jpg"/>
+      						<figcaption>
+      							<div>
+      								<h2>Delivery</h2>
+      								<a href = "deliver.html"><p>View More ></p></a>
+      							</div>
+      						</figcaption>
+      					</figure>
+              </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </body>
+
+  <script>
+      $(window).on('scroll', function ()
+      {
+        if ($(window).scrollTop() > 150)
+        {
+          $('header').addClass('fixed');
+          //$('.page-header').addClass('hide-header');
+        }
+        else
+        {
+          $('header').removeClass('fixed');
+          //$('.page-header').removeClass('hide-header');
+        }
+      });
+
+  </script>
+</html>

@@ -1,0 +1,341 @@
+<html>
+  <head>
+    <title>Movie Homepage</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=devide-width, , height=device-height, user-scalable=no, initial-scale=1." />
+
+    <link rel = "shortcut icon" type = "image/x-icon" href = "./img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="./style/movieHome1.css" />
+    <link rel="stylesheet" type="text/css" href="./style/common.css" />
+		<link rel="stylesheet" type="text/css" href="./style/component.css" />
+
+    <style>
+      @font-face
+      {
+          font-family: "regular";
+          src: url("./fonts/Roboto-Regular.woff");
+      }
+
+      @font-face
+      {
+          font-family: "bold";
+          src: url("./fonts/Roboto-Bold.woff");
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <img class = "colorblock" src = "./img/block.png"></img>
+      <div class="wrapper">
+          <nav>
+            <a class = "left" href="home.html"><img src = "./img/logonew.png"></a>
+            <a class = "mid" href="movie1.html">MOVIE</a>
+            <a class = "mid" href="food.html">FOOD</a>
+            <a class = "right" href="register.html"><img src = "./img/user1.png"></a>
+          </nav>
+      </div>
+    </header>
+
+    <section id = "main">
+
+      <div class = "nextH">
+        <a class = "n1" href="movie1.html"><img class = "imgn1" src="./img/showing1.png">NOW SHOWING</a>
+        <a class = "n2" href="#"><img class = "imgn2" src="./img/soon1.png">COMING SOON</a>
+      </div>
+
+      <div class = "next2">
+        <form action = "" method = "post">
+    			<select class = "cinema" name = "cinema" style = "border-radius: 100px; font-size: 10pt; width: 350px; height: 40px; border: 2px solid black">
+    				<option disabled selected value> SELECT CINEMA </option>
+    				<option > Alabang Town Center </option>
+    				<option > Glorietta 4 </option>
+    				<option > Greenbelt 1 </option>
+    				<option > Greenbelt 3 </option>
+    				<option > Market! Market! </option>
+    				<option > Trinoma </option>
+    				<option > UP Town Center </option>
+    			</select>
+    		</form>
+
+    		<form action = "" method = "post">
+    			<select class = "movie" name = "movie" style = "border-radius: 100px; font-size: 10pt; width: 350px; height: 40px; border: 2px solid black">
+    				<option disabled selected value> SELECT MOVIE </option>
+    				<option > Bad Genius </option>
+    				<option > Happy Death Day </option>
+    				<option > The Foreigner </option>
+    				<option > Geostorm </option>
+    				<option > Kingsman: The Golden Circle </option>
+    			</select>
+    		</form>
+
+        <input type="submit" class="sClick" value = "SEARCH">
+      <!--  <button class="btn btn-2 btn-2g">SEARCH</button> -->
+      </div>
+
+    </section>
+
+    <!-- MOVIE POSTERS -->
+  	<div class = "posters">
+  		<div class="container1">
+  			<img src="./img/theForeigner1.jpg" alt="Avatar" class="moviePoster">
+
+  			<div class="overlay">
+  				<div class="title">The Foreigner</div>
+  			</div>
+
+  			<div class="schedBtn1">
+  				<button class="sched" id="sched">CHOOSE SCHEDULE</button>
+  			</div>
+
+  			<div class="overlay2">
+  				<div class="rating">R-13</div>
+  				<img src="./img/moreInfo.png" title = "More Deatils" alt="Avatar" class="moreInfo">
+  				<button class="moreDetails" id="moreDetails">More Details</button>
+  			</div>
+  		</div>
+
+  		<div class="container2">
+  			<img src="./img/geostorm1.png" alt="Avatar" class="moviePoster">
+
+  			<div class="overlay">
+  				<div class="title">Geostorm</div>
+  			</div>
+
+  			<div class="schedBtn2">
+  				<button class="sched" id="sched">CHOOSE SCHEDULE</button>
+  			</div>
+
+  			<div class="overlay2">
+  				<div class="rating">PG</div>
+  				<img src="./img/moreInfo.png" title = "More Deatils" alt="Avatar" class="moreInfo">
+  				<button class="moreDetails" id="moreDetails">More Details</button>
+  			</div>
+  		</div>
+
+  		<div class="container3">
+  			<img src="./img/happyDeathDay1.png" alt="Avatar" class="moviePoster">
+
+  			<div class="overlay">
+  				<div class="title">Happy Death Day</div>
+  			</div>
+
+  			<div class="schedBtn3">
+  				<button class="sched" id="sched">CHOOSE SCHEDULE</button>
+  			</div>
+
+  			<div class="overlay2">
+  				<div class="rating">R-13</div>
+  				<img src="./img/moreInfo.png" title = "More Deatils" alt="Avatar" class="moreInfo">
+  				<button class="moreDetails" id="moreDetails">More Details</button>
+  			</div>
+  		</div>
+
+  		<!--PREVIOUS&NEXT BUTTON-->
+  		<a href="#" class="previousbtn round">&#8249;</a>
+  		<a href="#" class="nextbtn round">>&#8250;</a>
+
+  	</div>
+
+    <!--POP-UP DETAILS-->
+  	<div id="myModal" class="modal">
+
+  		<!-- details content -->
+  		<div class="modal-content">
+  			<span class="close1">&times;</span>
+  			<p><span style = "letter-spacing: 1px; font-size: 35px; color: #4A81CF" class="synopsisLabel">SYNOPSIS</span></p>
+  			<br><hr>
+  			<img src="./img/theForeigner3.jpg" alt="Avatar" class="theForeigner">
+
+  			<div class = "movieInfo1">
+  				<span class = "movieTitle" style = "font-size: 25px; color: #4A81CF">THE FOREIGNER</span> <br><br><br>
+  				<span class = "movieGenre" style = "font-size: 20px; color: #4A81CF">Genre: </span>
+  				<span class = "genre" style = "font-size: 20px; color: #828385">Action | Thriller</span><br><br>
+  				<span class = "movieRating" style = "font-size: 20px; color: #4A81CF">Rating:</span>
+  				<span class = "rating1" style = "font-size: 20px; color: #828385">R-13</span><br><br>
+  				<span class = "movieCast" style = "font-size: 20px; color: #4A81CF">Cast:</span>
+  				<span class = "cast" style = "font-size: 20px; color: #828385">Jackie Chan, Pierce Brosnan, Katie Leung, Rufus Jones</span><br>
+  			</div>
+
+  			<div class = "movieInfo2">
+  				<span class = "movieRTime" style = "font-size: 20px; color: #4A81CF">Running Time:</span>
+  				<span class = "rTime" style = "font-size: 20px; color: #828385">1:54</span><br><br>
+  				<span class = "movieTDate" style = "font-size: 20px; color: #4A81CF">Tentative Date:</span>
+  				<span class = "tDate" style = "font-size: 20px; color: #828385">October 18, 2017</span>
+  			</div>
+
+  			<div class = "synopsis">
+  			<br><br><br><br><br><br><br><br><br><br>
+  				<p>
+  				 The story of humble London businessman Quan (Chan), whose long-buried past erupts in a revenge-fueled vendetta
+  				 when the only person left for him to love - his teenage daughter - is taken from him in a senseless act of
+  				 politically-motivated terrorism. In his relentless search for the identity of the terrorists, Quan is forced
+  				 into a cat- and-mouse conflict with a British government official (Brosnan), whose own past may hold clues to
+  				 the identities of the elusive killers.</p>
+  			</div>
+
+  			<br>
+  		</div>
+
+  	</div>
+
+    <!--POP-UP SCHEDULE-->
+  	<div id="popSched" class="popSched">
+
+  		<!-- details content -->
+  		<div class="modal-content">
+  			<span class="close2">&times;</span>
+  			<p><span style = "letter-spacing: 1px; font-size: 35px; color: #4A81CF" class="schedLabel">CHOOSE SCHEDULE</span></p>
+  			<br><hr>
+
+  			<div class = "titleLabel">
+  				<span class = "movieTitle" style = "font-size: 30px; color: #4A81CF">THE FOREIGNER</span> <br><br>
+  			</div>
+
+  			<div class = "ATCSched">
+  				<b><span class = "cineATC" style = "font-size: 20px; color: #4A81CF">Alabang Town Center</span><br>
+  				<span class = "atcCine" style = "font-size: 20px; color: #828385">Cinema 4</b></span>
+  				<span class = "atcPrice" style = "font-size: 20px; color: #828385">Php 270.00</span><br><br>
+  				<span class = "atcTime" style = "font-size: 20px; color: #828385">1:00 PM  |  3:30 PM  |  6:00 PM  |  8:30 PM</span><br>
+
+  				<button class="contact1" id="contact1">CONTACT</button>
+
+  			</div>
+
+  			<div class="vl1"></div>
+
+  			<div class = "marketSched">
+  				<b><span class = "cineMarket" style = "font-size: 20px; color: #4A81CF">Market! Market!</span><br>
+  				<span class = "marketCine" style = "font-size: 20px; color: #828385">Cinema 2</b></span>
+  				<span class = "marketPrice" style = "font-size: 20px; color: #828385">Php 260.00</span><br><br>
+  				<span class = "marketTime" style = "font-size: 20px; color: #828385">1:40 PM  |  4:10 PM  |  6:40 PM  |  9:10 PM</span><br>
+
+  				<button class="contact2" id="contact2">CONTACT</button>
+
+  			</div>
+
+  			<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br>
+  		</div>
+
+  	</div>
+
+  	<footer>
+
+  		Copyrights © 2017 | All Rights Reserved.
+
+  	</footer>
+
+    <script src="js/classie.js"></script>
+    <script>
+    /* BUTTON */
+    var buttons7Click = Array.prototype.slice.call( document.querySelectorAll( '#btn-click button' ) ),
+      buttons9Click = Array.prototype.slice.call( document.querySelectorAll( 'button.btn-8g' ) ),
+      totalButtons7Click = buttons7Click.length,
+      totalButtons9Click = buttons9Click.length;
+
+    buttons7Click.forEach( function( el, i ) { el.addEventListener( 'click', activate, false ); } );
+    buttons9Click.forEach( function( el, i ) { el.addEventListener( 'click', activate, false ); } );
+
+    function activate() {
+      var self = this, activatedClass = 'btn-activated';
+
+      if( classie.has( this, 'btn-7h' ) ) {
+        // if it is the first of the two btn-7h then activatedClass = 'btn-error';
+        // if it is the second then activatedClass = 'btn-success'
+        activatedClass = buttons7Click.indexOf( this ) === totalButtons7Click-2 ? 'btn-error' : 'btn-success';
+      }
+      else if( classie.has( this, 'btn-8g' ) ) {
+        // if it is the first of the two btn-8g then activatedClass = 'btn-success3d';
+        // if it is the second then activatedClass = 'btn-error3d'
+        activatedClass = buttons9Click.indexOf( this ) === totalButtons9Click-2 ? 'btn-success3d' : 'btn-error3d';
+      }
+
+      if( !classie.has( this, activatedClass ) ) {
+        classie.add( this, activatedClass );
+        setTimeout( function() { classie.remove( self, activatedClass ) }, 1000 );
+      }
+    }
+
+    document.querySelector( '.btn-7i' ).addEventListener( 'click', function() {
+      classie.add( document.querySelector( '#trash-effect' ), 'trash-effect-active' );
+    }, false );
+    </script>
+
+    <!--JAVASCRIPT FOR DETAILS POP-UP-->
+  	<script>
+  		// Get the modal
+  		var modal1 = document.getElementById('myModal');
+
+  		// Get the button that opens the modal
+  		var btn1 = document.getElementById("moreDetails");
+
+  		// Get the <span> element that closes the modal
+  		var span1 = document.getElementsByClassName("close1")[0];
+
+  		// When the user clicks the button, open the modal
+  		btn1.onclick = function() {
+  			modal1.style.display = "block";
+  		}
+
+  		// When the user clicks on <span> (x), close the modal
+  		span1.onclick = function() {
+  			modal1.style.display = "none";
+  		}
+
+  		// When the user clicks anywhere outside of the modal, close it
+  		window.onclick = function(event) {
+  			if (event.target == modal1) {
+  				modal1.style.display = "none";
+  			}
+  		}
+  	</script>
+
+  	<!--DETAILS FOR SCHED POP UP -->
+  	<script>
+  		// Get the modal
+  		var modal2 = document.getElementById('popSched');
+
+  		// Get the button that opens the modal
+  		var btn2 = document.getElementById("sched");
+
+  		// Get the <span> element that closes the modal
+  		var span2 = document.getElementsByClassName("close2")[0];
+
+  		// When the user clicks the button, open the modal
+  		btn2.onclick = function() {
+  			modal2.style.display = "block";
+  		}
+
+  		// When the user clicks on <span> (x), close the modal
+  		span2.onclick = function() {
+  			modal2.style.display = "none";
+  		}
+
+  		// When the user clicks anywhere outside of the modal, close it
+  		window.onclick = function(event) {
+  			if (event.target == modal2) {
+  				modal2.style.display = "none";
+  			}
+  		}
+  	</script>
+
+  </body>
+
+  <script>
+      $(window).on('scroll', function ()
+      {
+        if ($(window).scrollTop() > 150)
+        {
+          $('header').addClass('fixed');
+          //$('.page-header').addClass('hide-header');
+        }
+        else
+        {
+          $('header').removeClass('fixed');
+          //$('.page-header').removeClass('hide-header');
+        }
+      });
+
+  </script>
+</html>
